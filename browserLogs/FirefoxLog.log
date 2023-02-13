@@ -1,0 +1,14 @@
+1675930610752	geckodriver	INFO	Listening on 127.0.0.1:14809
+1675930611713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Alpaca\\AppData\\Local\\Temp\\rust_mozprofileecQGdK"
+1675930612469	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675930612479	Marionette	INFO	Listening on port 53348
+Read port: 53348
+1675930613250	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Alpaca\\AppData\\Local\\Temp\\rust_mozprofileecQGdK\\search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+1675930681657	Marionette	INFO	Stopped listening on port 53348
+Dynamically enable window occlusion 1
+[Parent 20324, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]

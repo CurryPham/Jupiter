@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [NopCommerce - User]" verbose="0">
+  <parameter name="envName" value="local"/>
+  <parameter name="serverName" value="dev"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="reportConfig.ExtentTestListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="utils.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="3" name="Run on chrome(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="jupiter_Quote.Create_Quote">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="afterClass"/>
+          <include name="User_02_Review_Quote" invocation-numbers="0"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- jupiter_Quote.Create_Quote -->
+    </classes>
+  </test> <!-- Run on chrome(failed) -->
+</suite> <!-- Failed suite [NopCommerce - User] -->
